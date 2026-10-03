@@ -39,7 +39,7 @@ class VehicleFactory:
         return self._registry[kind]()
 
 
-def main():
+def main() -> None:
     factory = VehicleFactory()
 
     print(factory.create("bus").mode())
