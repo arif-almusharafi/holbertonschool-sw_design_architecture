@@ -39,21 +39,6 @@ class VehicleFactory:
         return self._registry[kind]()
 
 
-def main() -> None:
-    factory = VehicleFactory()
-
-    print(factory.create("bus").mode())
-    print(factory.create("train").mode())
-    print(factory.create("bike").mode())
-
-    # TODO: register Scooter with factory.register_kind(...)
-    # TODO: print factory.create("scooter").mode()
-
-
-if __name__ == "__main__":
-    main()
-
-
 def main():
     factory = VehicleFactory()
 
